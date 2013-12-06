@@ -213,7 +213,7 @@ void find_convex_hull(struct ctx *ctx)
 					(y - defect_array[i].depth_point->y) *
 					(y - defect_array[i].depth_point->y);
 
-				dist += sqrt((float)d);
+				dist += (int)sqrt((float)d);
 			}
 
 			ctx->hand_radius = dist / defects->total;
